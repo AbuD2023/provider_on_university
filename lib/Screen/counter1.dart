@@ -13,6 +13,8 @@ class Counter1 extends StatelessWidget {
         width: 150,
         height: 150,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text('${Provider.of<CounterProvider>(context).counter}'),
             Consumer<CounterProvider>(
